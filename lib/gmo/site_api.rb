@@ -98,7 +98,7 @@ module GMO
       # /payment/ExecTran.idPass
       def exec_tran(options = {})
         name = "ExecTran.idPass"
-        required = [:access_id, :access_pass, :order_id, :member_id, :card_seq]
+        required = [:access_id, :access_pass, :order_id]
         assert_required_options(required, options)
         post_request name, options
       end
